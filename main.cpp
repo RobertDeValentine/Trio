@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// <-- ADD YOUR FUNCTION PROTOTYPE HERE
+void bigToSmall( int &, int &, int &); // <-- ADD YOUR FUNCTION PROTOTYPE HERE
 
 int main()
 {
@@ -12,7 +12,7 @@ int main()
   //...END OF "DO NOT CHANGE" AREA
 
 
-  // <-- ADD YOUR FUNCTION CALL HERE
+  bigToSmall(red, green, blue); // <-- ADD YOUR FUNCTION CALL HERE
 
 
   //DO NOT CHANGE WITHIN THIS AREA...
@@ -23,3 +23,36 @@ int main()
 }
 
 // <-- ADD YOUR FUNCTION DEFINITON HERE
+void bigToSmall(int &first, int &second, int &third) 
+{   
+        int biggest, middle, smallest, temp;
+        if(first<second)
+        {
+            temp = first;
+            first = second;
+            second = temp;
+        }
+        if( second < third)
+        {
+                temp = second;
+                second = third;
+                third = temp;
+        }
+        if(first<second)
+        {
+            temp = first;
+            first = second;
+            second = temp;
+        }
+ 
+
+  return;
+}
+
+
+
+
+
+
+
+
